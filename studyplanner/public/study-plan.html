@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Plan - Study Planner</title>
+    <link rel="stylesheet" href="study-plan.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>📖 Study Planner</h2>
+        <a href="dashboard.html">🏠 Dashboard</a>
+    </nav>
+
+    <!-- Study Plan Section -->
+    <div class="container">
+        <h1>📅 Your Study Plan</h1>
+        <p>Select your exam date & subjects to generate a study plan.</p>
+
+        <!-- Form for Study Plan -->
+        <form id="studyPlanForm">
+            <label>Exam Date:</label>
+            <input type="date" id="examDate" required>
+
+            <label>Select Subjects:</label>
+            <select id="subjectSelect" multiple>
+                <option value="DBMS">DBMS</option>
+                <option value="DSA">DSA</option>
+                <option value="CN">Computer Networks</option>
+                <option value="OS">Operating System</option>
+            </select>
+
+            <button type="submit">Generate Plan</button>
+        </form>
+
+        <!-- Study Plan Output -->
+        <div id="studyPlanOutput"></div>
+    </div>
+
+    <script src="study-plan.js"></script>
+</body>
+</html>

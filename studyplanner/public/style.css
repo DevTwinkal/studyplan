@@ -1,0 +1,128 @@
+* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: #0073e6;
+    color: white;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #f4f4f4;
+}
+
+.hero h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hero button {
+    background: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 30px;
+}
+
+.feature-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature-box p {
+    background: #0073e6;
+    color: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 30px;
+    background: #f9f9f9;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #0073e6;
+    color: white;
+    margin-top: 20px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+.popup input, .popup select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+.popup button {
+    background: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background: #005bb5;
+}
